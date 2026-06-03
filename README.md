@@ -28,13 +28,35 @@ Realtime chat API built with FastAPI, WebSockets and Redis pub/sub.
 
 - Docker
 - Docker Compose
+- Python 3.12+
 
 ### Run the project
 
 ```bash
+# Clone the repository
 git clone git@github.com:vanDevBett/realtime-chat.git
-cd realtime-chat
+cd task-manager-api
+```
+
+```bash
+# Create the environment file
 cp .env.example .env
+```
+
+```bash
+# Create and activate virtual environment
+
+# Mac / Linux
+python3 -m venv venv
+source venv/bin/activate
+
+# Windows
+python -m venv venv
+venv\Scripts\activate
+```
+
+```bash
+# Start the containers
 docker compose up --build
 ```
 
