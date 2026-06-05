@@ -22,3 +22,8 @@ app.include_router(chat_router, prefix="/chat", tags=["chat"])
 @app.get("/")
 def root():
     return {"message": "Realtime Chat API is running"}
+
+
+@app.get("/health")
+def health():
+    return {"status": "ok"}
