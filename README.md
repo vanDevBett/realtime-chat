@@ -2,6 +2,23 @@
 
 Realtime chat API built with FastAPI, WebSockets and Redis pub/sub.
 
+## Live Demo
+
+API available at: https://realtime-chat-production-3725.up.railway.app
+
+Interactive documentation: https://realtime-chat-production-3725.up.railway.app/docs
+
+### Test the chat in production
+
+1. Register a user at `/docs`
+2. Login and copy the `access_token`
+3. Open `test_chat.html` in two browser tabs
+4. Paste the token in each tab and click **Connect**
+5. Start chatting in realtime
+
+> **Note:** This API is hosted on Railway's free tier.
+> The first request may take a few seconds to respond.
+
 ## Tech Stack
 
 - **FastAPI** — Python web framework
