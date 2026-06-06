@@ -23,7 +23,7 @@
 
         function connect() {
             const token = document.getElementById('token').value;
-            ws = new WebSocket(`ws://localhost:8000/chat/ws/general?token=${token}`);
+            ws = new WebSocket(`wss://realtime-chat-production-3725.up.railway.app/chat/ws/general?token=${token}`);
 
             ws.onopen = () => addMessage('✅ Connected to general room');
             ws.onmessage = (e) => {
